@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simple Music App</title>
+
+<style>
+    body {
+        background: #121212;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .player {
+        width: 300px;
+        background: #1e1e1e;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        margin: 5px 0;
+    }
+
+    p {
+        color: #aaa;
+        margin-bottom: 15px;
+    }
+
+    .controls button {
+        font-size: 18px;
+        margin: 10px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .progress {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    input[type="range"] {
+        width: 100%;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="player">
+    <img id="cover" src="https://picsum.photos/300" alt="cover">
+    <h2 id="title">Song Title</h2>
+    <p id="artist">Artist</p>
+
+    <input type="range" id="progress" value="0">
+
+    <div class="controls">
+        <button onclick="prevSong()">⏮</button>
+        <button onclick="playPause()">▶️</button>
+        <button onclick="nextSong()">⏭</button>
+    </div>
+
+    <input type="range" min="0" max="1" step="0.01" onchange="setVolume(this.value)">
+</div>
+
+<audio id="audio"></audio>
+
+<script>
+    const songs = [
+        {
+            title: "Song One",
+            artist: "Artist One",
+            src: "song1.mp3"
+        },
+        {
+            title: "Song Two",
+            artist: "Artist Two",
+            src: "song2.mp3"
+        },
+        {
+            title: "Song Three",
+            artist: "Artist Three",
+            src: "song2.mp3"
+        }
+    ];
+
+    let index = 0;
+    const audio = document.getElementById("audio");
+    const title = document.getElementById("title");
+    const artist = document.getElementById("artist");
+    const progress = document.getElementById("progress");
+
+    loadSong();
+
+    function loadSong() {
+        audio.src = songs[index].src;
+        title.textContent = songs[index].title;
+        artist.textContent = songs[index].artist;
+    }
+
+    function playPause() {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+
+    function nextSong() {
+        index = (index + 1) % songs.length;
+        loadSong();
+        audio.play();
+    }
+
+    function prevSong() {
+        index = (index - 1 + songs.length) % songs.length;
+        loadSong();
+        audio.play();
+    }
+
+    audio.addEventListener("timeupdate", () => {
+        progress.value = (audio.currentTime / audio.duration) * 100 || 0;
+    });
+
+    progress.addEventListener("input", () => {
+        audio.currentTime = (progress.value / 100) * audio.duration;
+    });
+
+    function setVolume(value) {
+        audio.volume = value;
+    }
+</script>
+<input type="range" id="progress" value="0">
+        <input type="password">
+        <input type="url">
+        <input type="number">
+        <input type="date">
+        <input type="time">
+        <input type="file">
+        <input type="image">
+        <input type="hidden">
+        <input type="color">
+        <input type="checkbox" required>
+
+</body>
+</html>

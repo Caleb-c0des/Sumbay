@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureBright Academy</title>
+    <link rel="stylesheet" href="ai.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">FutureBright Academy</div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav" id="navMenu">
+            <a href="#about">About</a>
+            <a href="#academics">Academics</a>
+            <a href="#programs">Programs</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="typing">Building the Leaders of Tomorrow</h1>
+            <p>Quality education, modern facilities, and a safe environment where every student can grow.</p>
+            <button class="cta">Enroll Now</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>Why Choose Us</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Qualified Teachers</h3>
+                <p>Our professional staff ensures excellent learning.</p>
+            </div>
+            <div class="card">
+                <h3>Modern Facilities</h3>
+                <p>Equipped with up-to-date laboratories and ICT rooms.</p>
+            </div>
+            <div class="card">
+                <h3>Safe Environment</h3>
+                <p>We prioritize the safety and well-being of every student.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="section academics">
+        <h2>Academics</h2>
+        <div class="levels">
+            <div class="level">Nursery</div>
+            <div class="level">Primary</div>
+            <div class="level">Junior Secondary</div>
+            <div class="level">Senior Secondary</div>z
+        </div>
+    </section>
+
+    <!-- Gallery Slider -->
+    <section id="gallery" class="section gallery">
+        <h2>Gallery</h2>
+
+        <div class="slider">
+            <button class="slide-btn left" id="prevBtn">&#10094;</button>
+
+            <div class="slides" id="slides">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" alt="">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
+                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94" alt="">
+            </div>
+
+            <button class="slide-btn right" id="nextBtn">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>📍 123 Education Street, Lagos</p>
+        <p>📞 +234 800 555 1234</p>
+        <p>✉️ info@futurebright.edu</p>
+    </section>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> FutureBright Academy</p>
+    </footer>
+</body>
+<script src="./ai.js"></script>
+</html>
