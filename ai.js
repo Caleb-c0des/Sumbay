@@ -62,7 +62,7 @@ backTop.addEventListener("click", () => {
    4️⃣ Typing Text Effect (Hero Section)
    Types out text letter by letter
 ======================================================= */
-let text = "Building the Leaders of Tomorrow";
+let text = "Exellence is our goal";
 let index = 0;
 const typingEl = document.getElementById("typing");
 function type() {

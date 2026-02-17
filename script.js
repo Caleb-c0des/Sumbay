@@ -6,7 +6,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
   });
 });
-const text="Building Leaders of Tomorrow";
+const text="Exellence is our goal";
 const typingElement= document.getElementById("typing");
 let index=0;
 function typeEffect() {

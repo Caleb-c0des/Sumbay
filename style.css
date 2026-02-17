@@ -47,15 +47,13 @@ nav {
     padding-left: 70px;
 }
 .hero-content {
-    height:300px;
-    width:500px;
     background: rgba(255,255,255,0.25);
     border-radius: 20px;
     padding:40px;
     backdrop-filter: blur(10px);
     max-width: 500px;
 }
-.hero-content .cta {
+.cta {
     background-color: #2c4df7;
     color:white;
     padding:12px 25px;
@@ -91,60 +89,31 @@ nav {
 .card:hover, .level:hover  {
     transform: translateY(-10px);
 }
-.program-section {
-    text-align: center;
-}
-.program-section h2 {
-    margin-bottom: 10px;
-}
-.program-intro  {
-    opacity: 0.7;
-    color:black;
-}
-.programs {
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:40px;
-}
-.program-box {
-    width:400px;
-    color:#222;
-    overflow: hidden;
-    border-radius:20px ;
-    border: 1px solid #222;
-    background-color:rgba(255,255,255,0.35);
-    backdrop-filter: blur(10px);
-    box-shadow:0 8px 25px rgba(0,0,0,0.1) ;
-}
-.program-img {
-    overflow: hidden;
-    width:400px;
-    color:#222;
-}
-.program-box img {
-    width: 100%;
-    border-radius:20px 20px 0px 0px;
-    transition: 0.5s;
-    height:200px;
-}
-.program-box img:hover {
-    transform: scale(1.2);
-    border-radius:20px 20px 0px 0px;
-}
-.program-info,.program p {
-    color:black;
-    padding:20px;
-}
-.project-box p,h2 {
-    font-weight: bolder;
+.gallery-section h2 {
+    text-align:center;
+    margin-top: 50px;
+    margin-bottom:20px;
 }
 .contact-sec h2 {
-    margin-top: 200px;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom:20px;
 }
 .contact-sec p {
     text-align: center;
-    margin-bottom: 200px;
+    margin-bottom:40px;
+}
+.sliders {
+    display:flex;
+    gap:20px;
+    justify-content: center;
+}
+.sliders img {
+    width:300px;
+    height:300px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
 }
 footer {
     background: #2c4df7;
