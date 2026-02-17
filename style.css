@@ -8,6 +8,37 @@ body {
     color:#222;
     background-color:#f0f4ff;
 }
+@media (max-width: 830px) {
+     .nav {
+        position: absolute;
+        top: 80px;
+        right: -200px;
+        background: rgba(255,255,255,0.9);
+        backdrop-filter: blur(10px);
+        width: 180px;
+        padding: 20px;
+        display: block;
+        text-align: right;
+        border-radius: 10px;
+        transition: .3s;
+    }
+
+    .nav.active {
+        right: 20px;
+    }
+
+    .phone-menu {
+        display: flex;
+    }
+}
+.phone-menu{
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
 header {
     display:flex;
     justify-content: space-between;
