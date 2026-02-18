@@ -15,7 +15,12 @@ body {
         align-items: normal;
      }
      nav a{
-        display:none
+        display:none;
+        position: fixed;
+     }
+     .cards,.levels {
+        display:flex;
+        flex-direction: column;
      }
      .sliders {
         display:flex;
