@@ -20,6 +20,9 @@ body {
         display:flex;
         flex-direction: column;
      }
+     footer {
+        width:100%;
+     }
 }
 .phone-menu{
     width: 30px;
