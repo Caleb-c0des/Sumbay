@@ -21,12 +21,20 @@ body {
      .cards,.levels {
         display:flex;
         flex-direction: column;
+        gap:0.2rem;
+        justify-content: center;
+        align-items: center;
      }
+     .card,.level {
+        margin-bottom: 0.2rem;
+     }
+
      .sliders {
         display:flex;
         flex-direction: column;
         justify-content: center;
      }
+
      footer {
         width:100%;
      }
@@ -100,6 +108,7 @@ nav {
 .about-us, .academics-section {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 .cards, .levels  {
     display: flex;
@@ -115,7 +124,6 @@ nav {
     box-shadow:0 8px 25px rgba(0,0,0,0.1) ;
     border-radius: 20px;
     transition: 0.4s;
-    margin-bottom: 100px;
 }
 .card:hover, .level:hover  {
     transform: translateY(-10px);
